@@ -24,7 +24,7 @@ def main(argv=sys.argv[1:]):
     password = getpass.getpass('password: ')
     res = requests.get(url)
     cookies = res.cookies
-    soup = BeautifulSoup(res.content, 'lxml')
+    soup = BeautifulSoup(res.content, 'html.parser')
 
     forms = soup.select('form')
     if not forms:
