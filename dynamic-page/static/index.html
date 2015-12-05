@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="dynamic-list"></div>
+    <script>
+        var parent_tag = document.querySelector('#dynamic-list');
+        var ul = document.createElement('ul');
+        parent_tag.appendChild(ul);
+        var animals = ['bull', 'horse', 'kangaroo', 'giraffe'];
+        animals.forEach(function (animal){
+            var li = document.createElement('li');
+            li.textContent = animal;
+            ul.appendChild(li);
+        });
+    </script>
+  </body>
+</html>
