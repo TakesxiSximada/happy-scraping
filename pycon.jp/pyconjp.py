@@ -13,7 +13,7 @@ TARGET_URL = 'https://pycon.jp/2015/ja/schedule/tutorials/list/'
 
 def main(argv=sys.argv[1:]):
     parser = argparse.ArgumentParser()
-    parser.add_argument('output', type=argparse.FileType('w'))
+    parser.add_argument('output', type=argparse.FileType('w', encoding='utf-8'))
     parser.add_argument('-f', '--format', default='json', choices=['json', 'csv'])
     args = parser.parse_args(argv)
 
