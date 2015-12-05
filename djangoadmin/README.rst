@@ -11,6 +11,9 @@ Djangoのadmin認証を突破してみるサンプル
   $ python manage.py migrate
   $ python manage.py createsuperuser
 
+サーバ起動::
+
+  $ python manage.py runserver
 
 実行::
 
