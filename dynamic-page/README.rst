@@ -21,7 +21,9 @@ sleniumを使うと割と簡単にそれらの値を取得できます。
 
 .. note::
 
-   Selenium本体とPythonバインディングのseleniumライブラリが必要です。
+   seleniumが必要です。
+   Seleniumについてはこちらを参照 http://www.seleniumhq.org/download/
+   Firefixも必要です。
 
 Firefoxの場合::
 
@@ -32,6 +34,7 @@ PhantomJSを使ってヘッドレスにもできます。
 .. note::
 
    PhantomJSが必要です。またPhantonJSにパスを通す必要があります。
+   PhantomJSについてはこちらを参照 http://phantomjs.org/download.html
 
 PhantomJSの場合::
 
