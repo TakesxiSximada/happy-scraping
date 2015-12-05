@@ -21,7 +21,7 @@ def main(argv=sys.argv[1:]):
     output = args.output
 
     res = requests.get(TARGET_URL)
-    soup = bs4.BeautifulSoup(res.text)
+    soup = bs4.BeautifulSoup(res.text, 'lxml')
     titles = [(elm.text, elm.get('href')) for elm in soup.select('.presentation h3 a')]
 
     if fmt == 'json':
